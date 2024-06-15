@@ -115,3 +115,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Adicione isso ao final do seu arquivo settings.py
+DOWNLOADS_PATH = os.getenv('DOWNLOADS_PATH', 'C:/Downloads')  # Caminho padrão se a variável de ambiente não estiver definida
