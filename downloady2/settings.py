@@ -116,6 +116,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+<<<<<<< HEAD
 MEDIA_URL = '/media/'
 STATIC_ROOT = Path(BASE_DIR / 'static')
 MEDIA_ROOT = Path(BASE_DIR / 'media')
+=======
+# Adicione isso ao final do seu arquivo settings.py
+DOWNLOADS_PATH = os.getenv('DOWNLOADS_PATH', 'C:/Downloads')  # Caminho padrão se a variável de ambiente não estiver definida
+>>>>>>> 4c0a4946b1df7ce06f10458cec66dd3ab42b962a
